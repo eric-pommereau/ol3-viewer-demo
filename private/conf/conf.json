@@ -1,0 +1,6 @@
+{
+    "libs" : {
+        "ol_js" : "http://localhost/www/libraries/openlayers/v3.8.2/build/ol-debug.js",
+        "ol_css" : "http://localhost/www/libraries/openlayers/v3.8.2/css/ol.css"        
+    }    
+}
