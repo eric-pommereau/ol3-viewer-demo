@@ -14,9 +14,9 @@ try {
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Georef-client</title>
-		<meta name="description" content="">
-		<meta name="author" content="CIMI">
+		<title>Run and map - hydrants</title>
+		<meta name="description" content="Visalisation run and map des hydrants">
+		<meta name="author" content="Eric Pommereau">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -73,8 +73,8 @@ try {
             layers : [osm_layer],
             target : document.getElementById('map'),
             view : new ol.View({
-                center : ol.proj.transform([-3.9060, 47.8530], 'EPSG:4326', 'EPSG:3857'),
-                zoom : 19
+                center : ol.proj.transform([-3.8989448, 47.863219], 'EPSG:4326', 'EPSG:3857'),
+                zoom : 14
             })
         });
 
@@ -91,7 +91,7 @@ try {
 
         var hydrants_geojson = new ol.layer.Vector({
             source : new ol.source.Vector({
-                url : 'datas/geojson/20150822_hyrants.geojson',
+                url : 'datas/geojson/20150825_hydrants.geojson',
                 format : new ol.format.GeoJSON()
             }),
 
